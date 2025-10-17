@@ -13,6 +13,6 @@ if button and name and dob:
     month = int((age.days % 365)/30)
     day = (age.days % 365)%30
     st.write(f'{name}, Your age is :')
-    st.badge(f'{yrs} years and {month} month')
+    st.badge(f'{yrs} years and {month} month', color='green')
 else:
-    st.write('Value missing...',)
+    st.badge('Value missing...',color='red')
